@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block meta_title %}Expenses app{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg bg-dark" >
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+
+          <!--Navbar links-->
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="{% url 'expenses:expense-list' %}">Expenses</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="{% url 'expenses:category-list' %}">Categories</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="{% url 'expenses:expense-create' %}">Add</a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<br>
+    {% block content %}{% endblock %}
+  </body>
+</html>
+
