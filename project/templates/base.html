@@ -4,9 +4,10 @@
     <title>{% block meta_title %}Expenses app{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
-  <body>
+  
+  <body class="col-xs-1 text-center">
 
   <nav class="navbar navbar-expand-lg bg-dark" >
     <div class="container-fluid">
@@ -24,9 +25,12 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="{% url 'expenses:expense-create' %}">Add</a>
+            <a class="nav-link" style="color: white;" href="{% url 'expenses:expense-create' %}">Add Expenses</a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="{% url 'expenses:category-create' %}">Add Categories</a>
+          </li>  
 
 
         </ul>
