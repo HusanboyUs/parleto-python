@@ -8,7 +8,6 @@ https://parleto-python.herokuapp.com/expenses/expense/list/
 ```
 pip install -r requirements.txt
 py manage.py migrate
-py manage.py makemigrations
 py manage.py loaddata fixt -- if there is no data
 py manage.py runserver
 ```
