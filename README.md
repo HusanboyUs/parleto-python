@@ -1,5 +1,5 @@
 # Parleto-python
-parleto-python test task repository
+parleto-python  repository
 
 ## Live Demo:
 https://parleto-python.herokuapp.com/expenses/expense/list/
